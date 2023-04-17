@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Organization Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Organization Management</h1>
+
+    <h2>Add Employee</h2>
+    <form>
+      <label for="name">Full name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="position">Position:</label>
+      <select id="position" name="position">
+        <option value="manager">Manager</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="chief">Chief</option>
+        <option value="web-developer">Web-developer</option>
+        <option value="accountant">Accountant</option>
+        <option value="hr-manager">HR-manager</option>
+      </select>
+
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" required />
+
+      <input type="submit" value="Add Employee" />
+    </form>
+
+    <h2>Employee List</h2>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="employeeCount"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
